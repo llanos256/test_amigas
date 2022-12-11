@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "76d0d929-2208-4679-bd11-7d5b989371bb",
+		"name": "Laravel Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Students list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/students",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"s_id\": 10,\r\n    \"first_name\" : \"Eobard\",\r\n    \"last_name\" : \"Thawne\",\r\n    \"lv_id\" : 1,\r\n    \"group\" : \"A\",\r\n    \"email\": \"eobard@hotmail.com\",\r\n    \"phone_number\" : \"123\",\r\n    \"geolocation\" : null,\r\n    \"status\" : 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/createstudent",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"createstudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Enroll student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"s_id\" : 10,\r\n    \"c_id\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/enrollstudent",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"enrollstudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retire student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"s_id\" : 10,\r\n     \"c_id\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/retirestudent",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"retirestudent"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
